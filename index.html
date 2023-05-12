@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="calcu.css" />
+    <title>Kaishiro</title>
+  </head>
+  <body>
+    <main>
+      <p>Kaishiro</p>
+      <div class="calculator dark">
+        <div class="theme-toggler dark" onclick="toggleDarkMode()">
+          <i class="fa fa-moon-o" aria-hidden="true"></i>
+        </div>
+        <div class="display-screen">
+          <input type="text" id="soln-screen" placeholder="0" readonly />
+          <input type="text" id="prob-screen" readonly />
+        </div>
+
+        <section>
+          <button class="btns symbols" onclick="calculatePercent('%')">
+            %
+          </button>
+          <button class="btns symbols" onclick="calDisplay('00')">00</button>
+          <button class="btns symbols" onclick="calDisplay('*')">
+            &times;
+          </button>
+          <button class="btns symbols" onclick="bckSpace()">&#8592;</button>
+
+          <button class="btns" onclick="calDisplay('9')">9</button>
+          <button class="btns" onclick="calDisplay('8')">8</button>
+          <button class="btns" onclick="calDisplay('7')">7</button>
+          <button class="btns symbols" onclick="calDisplay('-')">
+            &minus;
+          </button>
+          <button class="btns" onclick="calDisplay('6')">6</button>
+          <button class="btns" onclick="calDisplay('5')">5</button>
+          <button class="btns" onclick="calDisplay('4')">4</button>
+          <button class="btns symbols" onclick="calDisplay('+')">&plus;</button>
+          <button class="btns" onclick="calDisplay('3')">3</button>
+          <button class="btns" onclick="calDisplay('2')">2</button>
+          <button class="btns" onclick="calDisplay('1')">1</button>
+          <button class="btns symbols" onclick="calDisplay('/')">
+            &divide;
+          </button>
+          <button class="btns resett" onclick="resetAll()">RESET</button>
+          <button class="btns" onclick="calDisplay('0')">0</button>
+          <button class="btns" onclick="calDisplay('.')">.</button>
+          <button class="btns equal" onclick="equalTo()">=</button>
+        </section>
+      </div>
+    </main>
+    <script src="cal.js"></script>
+  </body>
+</html>

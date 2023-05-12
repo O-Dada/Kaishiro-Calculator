@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700&display=swap");
+
+* {
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 700;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  /* width: 100%; */
+  font-size: 2.2em;
+  color: #fdfffe;
+  margin-bottom: -4.9em;
+  text-shadow: 20 30 30px #fa0d0d;
+  /* margin-left: -7.5em; */
+  /* border: 1px solid black; */
+}
+
+main {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  width: auto;
+}
+
+.calculator {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 2em;
+  border-radius: 1.2em;
+  box-shadow: 0 0 30px black;
+}
+
+.theme-toggler {
+  position: absolute;
+  top: 7px;
+  right: 35px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 0.2px 0px 7px 1.4px rgba(0, 0, 0, 0.2);
+}
+
+.fa-moon-o {
+  position: relative;
+  top: -4px;
+  color: red;
+  margin-left: 4px;
+  margin-bottom: -50px;
+  margin-top: -15px;
+}
+
+button:hover,
+.symbols:hover {
+  background-color: #caa016;
+}
+
+.display-screen {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 0.7em;
+  background-color: #e3ebfa;
+  border-radius: 0.3em;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+#prob-screen,
+#soln-screen {
+  height: 60px;
+  background-color: #e3ebfa;
+  border: none;
+  border-radius: 0.3em;
+  outline: none;
+  font-size: larger;
+  text-align: right;
+  padding-right: 0.2em;
+}
+#prob-screen {
+  font-size: 1.4em;
+}
+
+#soln-screen {
+  font-size: 2em;
+}
+
+.btns {
+  padding: 0.9em;
+  font-size: 1.25em;
+  border-radius: 0.6em;
+  background-color: #f0f0f0;
+  border: none;f
+  color: black;
+  box-shadow: 0.2px 0px 7px 1.4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+btns:hover {
+  background-color: black;
+}
+
+section {
+  width: 100%;
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  /* background-color: green; */
+  /* border: 1px solid red; */
+}
+
+.equal {
+  background-color: #097026;
+  color: white;
+  font-size: ;
+}
+
+section .symbols {
+  background-color: #64db87;
+  font-size: larger;
+  font-weight: 700;
+}
+
+.resett {
+  background-color: rgb(239, 16, 16);
+  color: white;
+}
+
+/* light theme */
+
+.calculator {
+  background-color: #fff;
+}
+
+/* dark theme */
+.calculator.dark {
+  background-color: #071115;
+}
+
+html {
+  background: url(CalPrototype/72.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
